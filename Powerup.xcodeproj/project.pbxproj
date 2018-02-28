@@ -22,6 +22,7 @@
 		2AF82A8F1B4BA74A00307BED /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF82A871B4BA74A00307BED /* FMDatabasePool.m */; };
 		2AF82A901B4BA74A00307BED /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF82A891B4BA74A00307BED /* FMDatabaseQueue.m */; };
 		2AF82A911B4BA74A00307BED /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF82A8C1B4BA74A00307BED /* FMResultSet.m */; };
+		5BD8647D2046D63600004B39 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8647C2046D63600004B39 /* Strings.swift */; };
 		D910FF191F04AB3200C444DA /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910FF181F04AB3200C444DA /* DataSource.swift */; };
 		D910FF1F1F04DD4F00C444DA /* ResultViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910FF1E1F04DD4F00C444DA /* ResultViewControllerTests.swift */; };
 		D910FF211F05E22400C444DA /* ScenarioViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910FF201F05E22400C444DA /* ScenarioViewControllerTests.swift */; };
@@ -107,6 +108,7 @@
 		2AF82A8A1B4BA74A00307BED /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = FMDB/FMDB.h; sourceTree = "<group>"; };
 		2AF82A8B1B4BA74A00307BED /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = FMDB/FMResultSet.h; sourceTree = "<group>"; };
 		2AF82A8C1B4BA74A00307BED /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = FMDB/FMResultSet.m; sourceTree = "<group>"; };
+		5BD8647C2046D63600004B39 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		D910FF181F04AB3200C444DA /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		D910FF1E1F04DD4F00C444DA /* ResultViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewControllerTests.swift; sourceTree = "<group>"; };
 		D910FF201F05E22400C444DA /* ScenarioViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScenarioViewControllerTests.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		2A0CA5511B294C6B00ED8781 /* Powerup */ = {
 			isa = PBXGroup;
 			children = (
+				5BD8647B2046D61A00004B39 /* Utilities */,
 				D9381DB21EF773B9000AC2B5 /* Font */,
 				D9AAA9C71EF25E2700287A79 /* Extensions */,
 				D9E74B771F1F145900A42B7E /* Vocab Matching Game */,
@@ -265,6 +268,14 @@
 				2AF82A8B1B4BA74A00307BED /* FMResultSet.h */,
 			);
 			name = FMDB;
+			sourceTree = "<group>";
+		};
+		5BD8647B2046D61A00004B39 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5BD8647C2046D63600004B39 /* Strings.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		D9381DB21EF773B9000AC2B5 /* Font */ = {
@@ -475,6 +486,7 @@
 				D984D3011F0F598C0006270D /* SinkToSwimGameScene.swift in Sources */,
 				D95BBB801F4A911D00E0E620 /* AboutViewController.swift in Sources */,
 				2AF82A8E1B4BA74A00307BED /* FMDatabaseAdditions.m in Sources */,
+				5BD8647D2046D63600004B39 /* Strings.swift in Sources */,
 				D984E4D61F4A95A400A06204 /* CustomizeAvatarViewController.swift in Sources */,
 				D9E74B791F1F149400A42B7E /* VocabMatchingGameScene.swift in Sources */,
 				D9E74B7F1F1F1AF800A42B7E /* VocabMatchingTile.swift in Sources */,

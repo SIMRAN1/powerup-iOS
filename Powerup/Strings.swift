@@ -10,3 +10,5 @@ import Foundation
 // Strings
 let endSceneTitleLabelText = "Game Over"
 let scoreLabelPrefix = "Score: "
+let boxEnlargingKey = "enlarge"
+let boxShrinkingKey = "shrink"

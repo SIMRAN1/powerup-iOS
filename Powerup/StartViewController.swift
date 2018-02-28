@@ -21,7 +21,7 @@ class StartViewController: UIViewController {
                 let alert = UIAlertController(title: warningTitleMessage, message: restartAppMessage , preferredStyle: .alert)
                 
                 // Quit app when ok button is clicked.
-                let okButton = UIAlertAction(title: okTitleMessage, style: .destructive, handler: {action in exit(1)})
+                let okButton = UIAlertAction(title: okText, style: .destructive, handler: {action in exit(1)})
                 
                 alert.addAction(okButton)
                 self.present(alert, animated: true)
@@ -38,7 +38,7 @@ class StartViewController: UIViewController {
         } else {
             // Remind players to create an avatar first.
             let alert = UIAlertController(title: warningTitleMessage, message: createAvatarMessage, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: okTitleMessage, style: .default, handler: {action in
+            alert.addAction(UIAlertAction(title: okText, style: .default, handler: {action in
                 self.performSegue(withIdentifier: "toNewAvatar", sender: self)
             }))
             self.present(alert, animated: true)
@@ -50,7 +50,7 @@ class StartViewController: UIViewController {
         if dataSource.avatarExists() {
             let alert = UIAlertController(title: confirmationTitleMessage, message: startNewGameMessage, preferredStyle: .alert)
             let okButton = UIAlertAction(title: newAvatarTitleMessage, style: .destructive, handler: {(action) -> Void in self.performSegue(withIdentifier: "toNewAvatar", sender: self)})
-            let cancelButton = UIAlertAction(title: cancelTitleMessage, style: .cancel)
+            let cancelButton = UIAlertAction(title: cancelText, style: .cancel)
             
             alert.addAction(okButton)
             alert.addAction(cancelButton)

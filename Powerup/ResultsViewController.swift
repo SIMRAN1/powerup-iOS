@@ -16,6 +16,7 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var karmaPointsLabel: UILabel!
     @IBOutlet weak var scenarioName: UILabel!
     
+    @IBOutlet weak var continueButton: UIButton!
     // MARK: Functions
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,8 +91,12 @@ class ResultsViewController: UIViewController {
             
             // Get the next scenario.
             var nextScenario = try dataSource.getScenario(of: currScenario.nextScenarioID)
+            print(currScenario)
             
             nextScenario.unlocked = true
+            if(currScenario.nextScenarioID==5){
+                continueButton.isHidden = false
+            }
             
             // Save the updated (next) scenario back to database.
             try dataSource.saveScenario(nextScenario)
